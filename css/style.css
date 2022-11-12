@@ -1,0 +1,166 @@
+:root{
+  --BORDER-RADIUS: 15px;
+  --BORDER: 1px solid black;
+}
+
+body {
+  margin: 0;
+}
+
+a:any-link{
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-evenly;  
+}
+
+.flexContainer div {
+  width: 33%;
+  
+}
+
+section {
+  background: linear-gradient(to bottom, gray, lightgray);
+  min-height: 100vh;
+  text-align: center;
+  padding: 1rem;
+  border-top: var(--BORDER);
+  margin: 1rem;
+}
+
+/* h1{
+  margin: 1rem;
+} */
+
+.skill-div{
+  background-color: whitesmoke;
+  border-radius: var(--BORDER-RADIUS);
+  box-shadow: -5px -5px 10px #333;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  justify-content: space-evenly;
+}
+
+
+
+.workGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "pic1 des1"
+  "pic2 des2"
+  "pic3 des3"
+  ;
+}
+
+#img1{
+  grid-area: pic1;
+}
+#img2{
+  grid-area: pic2;
+}
+#img3{
+  grid-area: pic3;
+}
+
+.viewbtn{
+
+  width: 80px;
+  height: 60px;
+  border-radius: var(--BORDER-RADIUS);
+  border: none;
+  cursor: pointer;
+  background-color: bisque;
+  padding: 5px;
+  color: black;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 720px) {
+  .flexContainer{
+    flex-direction: column;
+  }
+
+  .flexContainer div {
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  header{
+    display: flex;
+    
+  }
+
+  header ul{
+    display: flex;
+  }
+
+  .workGrid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .workGrid div{
+    width: 80%;
+  }
+  
+}
