@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Homework 17 Solved</title>
+    <title>Homework 19 Solved</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header>
       <img src="images/logo.png">
       <ul>
-        <li><a href="">ABOUT</a></li>
-        <li><a href="#">SKILLS</a></li>
-        <li><a href="#">WORK</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </header>
-    <section class="heroImg">
-      <div class="content">
+    <section class="heroImg" id="about">
+      <div class="content" >
         <img src="images/placeholder_picture.png">
         <h1>Your Name</h1>
         <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.</p>
         <button>Download Resume</button>
+        <button id = "viewSkills">View Skills</button>
       </div>
     </section>
-    <section  class="mySkills">
+    <section  class="mySkills" id="skills">
       <h1>My UX Skills</h1>
       <div class="flexContainer">
         <div class="skill-div">
@@ -76,11 +77,14 @@
     </section>
     <footer>
       <ul>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js
+  "></script>
+  <script src="js/index.js"></script>
 </html>

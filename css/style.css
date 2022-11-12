@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 a:any-link{
   color: white;
   text-decoration: none;
@@ -163,4 +167,9 @@ section {
     width: 80%;
   }
   
+}
+
+button {
+  width: 200px;
+  margin: 15px;
 }
